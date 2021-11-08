@@ -1,0 +1,213 @@
+:root{
+    --adriano-color: gold;
+   --adriano-color-secondary: black;
+   --adriano-color-darkgrey: #181818;
+  }
+  
+  
+  .some-class {
+    background-color: var(--adriano-color);
+    color: var(--adriano-color-secondary);
+    color: var(--adriano-color-darkgrey);
+  }
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+*::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--adriano-color-secondary); 
+  }
+   
+  *::-webkit-scrollbar-thumb {
+    background: var(--adriano-color-darkgrey);
+    border-radius: 10rem;
+  }
+
+header{
+    height: 100vh;
+}
+
+.video-background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9)
+{
+    .video-background {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9)
+{
+    .video-background {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* navbar */
+.navbar{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--adriano-color-secondary);
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background:var(--adriano-color);
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transition: 400ms;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: white;
+    transition: 400ms;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/* navbar */
+
+/* bio */
+
+#biography{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--adriano-color-secondary);
+}
+
+#biography h1{
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--adriano-color-darkgrey);    
+}
+
+.bio{
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+.bio-pic{
+    width: 49vw;
+    height: 90vh;
+}
+
+.bio-pic img{
+    width: 400px;
+    margin-left: 8rem;
+    margin-top: 7rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: solid 10px #181818;
+}
+
+.bio-p{
+    width: 49vw;
+    height: 90vh;
+}
+
+
+.bio-p p{
+    color: var(--adriano-color);
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: grid;
+    grid-template-columns: minmax(50ch, 55ch);
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+}
+/* bio */
+
+/* projects */
+
+#myprojects{
+    height: 100vh;
+    background-color: var(--adriano-color-secondary);
+}
+
+#myprojects h1{
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--adriano-color-darkgrey);    
+}
+
+.projects{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.videos{
+    width: 49vw;
+    display: grid;
+    justify-content: center;
+
+}
+
+.credits{
+    width: 49vw;
+    display: grid;
+    justify-content: center;
+}
+
+.credits p{
+    color: var(--adriano-color);
+    display: grid;
+    text-align: center;
+    margin-top: 4.5rem;
+    border: solid 5px #181818;
+}
