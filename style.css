@@ -11,11 +11,13 @@
     color: var(--adriano-color-darkgrey);
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display&family=Roboto:wght@100;400;500&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto';
     scroll-behavior: smooth;
 }
 
@@ -216,8 +218,22 @@ h1{
     text-align: center;
     margin-top: 4.5rem;
     border-bottom: solid 5px #181818;
+    animation: ngjyra2 1s infinite linear;
 }
 
+@keyframes ngjyra2 {
+    0% {
+        border-bottom: solid 5px #181818;
+    }
+
+    50% {
+        border-bottom: solid 5px #181818;
+    }
+
+    100% {
+        border-bottom: solid 5px transparent;
+    }
+}
 /* gallery */
 
 
@@ -261,7 +277,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 4rem 0rem;
+    margin: 8rem 0rem;
 }
 
 .name{

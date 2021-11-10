@@ -3,6 +3,7 @@
 }
 
 .bio-p p{
+    margin-top: 1rem;
     margin: auto;
     grid-template-columns: minmax(30ch, 35ch);
 }
@@ -17,4 +18,8 @@
 
 #submit{
     margin: auto;
+}
+
+form{
+    margin: 4rem 0rem;
 }
