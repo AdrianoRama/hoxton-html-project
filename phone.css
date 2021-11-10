@@ -1,0 +1,15 @@
+.credits{
+    display: none;
+}
+
+.bio-p p{
+    grid-template-columns: minmax(30ch, 35ch);
+}
+
+.videos{
+    width: 340px;
+}
+
+#gallery img{
+    width: auto;
+}

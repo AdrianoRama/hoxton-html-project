@@ -1,0 +1,33 @@
+.credits{
+    display: none;
+}
+
+.bio-p p{
+    margin: auto;
+    grid-template-columns: minmax(20ch, 25ch);
+}
+
+.videos{
+    width: 140px;
+}
+
+#contact{
+    height: 100vh;
+}
+
+form{
+    height: auto;
+}
+
+.name{
+    padding: 5px;
+}
+
+.email{
+    padding: 5px;
+}
+
+#submit{
+    padding: 5px;
+    margin: auto;
+}
