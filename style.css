@@ -73,7 +73,7 @@ header{
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: var(--adriano-color-secondary);
+    background-color: rgba(0, 0, 0, 0.96);
     position: fixed;
     width: 100vw;
     z-index: 2;
